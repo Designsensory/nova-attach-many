@@ -1,7 +1,7 @@
 <template>
     <DefaultField :field="currentField" :full-width-content="currentField.fullWidth" :show-help-text="false">
         <template #field :class="{'border-danger border': hasErrors}">
-            <div class="attach-many-container" :class="{'border-danger border': hasErrors}">
+            <div class="attach-many-container" :class="{'border-danger border': hasError}">
                 <div v-if="currentField.showToolbar" class="flex items-center border border-b-0 border-gray-100 dark:border-gray-700">
                     <div v-if="preview" class="flex justify-center p-3 w-full">
                         <div class="text-xl">{{ __('Selected Items') }} ({{ selected.length  }})</div>
@@ -40,7 +40,7 @@
                 </div>
             </div>
 
-            <HelpText class="error-text mt-2 text-danger" v-if="hasErrors">
+            <HelpText class="error-text mt-2 text-danger" v-if="hasError">
                 {{ firstError }}
             </HelpText>
 

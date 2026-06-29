@@ -11,9 +11,12 @@
     },
     "devDependencies": {
         "@vue/compiler-sfc": "^3.2.22",
+        "axios": "^1.18.1",
         "laravel-mix": "^6.0.41",
         "postcss": "^8.3.11",
-        "vue-loader": "^16.8.3"
-    },
-    "dependencies": {}
+        "uid": "^2.0.2",
+        "vue-loader": "^16.8.3",
+        "vuex": "^4.1.0",
+        "webpack": "^5.75.0"
+    }
 }
